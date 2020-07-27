@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Sign Up Form</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__picture"></div>
+      <form action="" id="signUpForm" class="form">
+        <h2 class="form__title">Register with us</h2>
+        <div class="form__control">
+          <label for="userName" class="form__label">Username:</label>
+          <div class="form__container">
+            <input
+              type="text"
+              id="userName"
+              placeholder="anonymous"
+              class="form__input"
+            />
+            <small class="form__message">Correct!</small>
+          </div>
+        </div>
+        <div class="form__control">
+          <label for="userEmail" class="form__label">Email:</label>
+          <div class="form__container">
+            <input
+              type="text"
+              id="userEmail"
+              placeholder="example@gmail.com"
+              class="form__input"
+            />
+            <small class="form__message">Correct!</small>
+          </div>
+        </div>
+        <div class="form__control">
+          <label for="userPassword" class="form__label">Password:</label>
+          <div class="form__container">
+            <input type="password" id="userPassword" class="form__input" />
+            <small class="form__message">Correct!</small>
+          </div>
+        </div>
+        <div class="form__control">
+          <label for="userConfirmPassword" class="form__label"
+            >Confirm Password:</label
+          >
+          <div class="form__container">
+            <input type="text" id="userConfirmPassword" class="form__input" />
+            <small class="form__message">Correct!</small>
+          </div>
+        </div>
+
+        <button type="submit" class="form__btn">Submit</button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
