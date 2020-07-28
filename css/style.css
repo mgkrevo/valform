@@ -139,3 +139,83 @@ body {
   background-color: #ffffff;
   color: #222831;
 }
+
+@media (min-width: 768px) {
+  .container__picture {
+    min-height: 250px;
+  }
+
+  .form__title {
+    font-size: 32px;
+  }
+
+  .form__label {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .form__input {
+    padding: 4px 5px;
+    font-size: 16px;
+  }
+
+  .form__input::placeholder {
+    font-size: 16px;
+  }
+
+  .form__message {
+    font-size: 14px;
+  }
+
+  .form__btn {
+    margin-top: 5px;
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .container__picture {
+    width: 40%;
+    min-height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .form {
+    width: 60%;
+    padding: 30px;
+  }
+
+  .form__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #222831;
+  }
+
+  .form__label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .form__input {
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+
+  .form__input::placeholder {
+    font-size: 18px;
+  }
+
+  .form__message {
+    font-size: 16px;
+  }
+
+  .form__btn {
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+}

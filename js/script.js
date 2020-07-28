@@ -27,6 +27,7 @@ function isInputsValid(...inputs) {
 
     switch (input.id) {
       case 'userName':
+        if (checkUserName(input)) break;
         checkLength(input, 6, 14);
         break;
       case 'userEmail':
@@ -101,6 +102,23 @@ function getInputName(input) {
   let name = input.id.split('user').slice(1).join('');
 
   return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
+function checkUserName(input) {
+  const illegalChars = /\W/;
+  const isValid = illegalChars.test(String(input.value).toLowerCase());
+
+  if (isValid) {
+    showErrorMessage(
+      input,
+      `${getInputName(input)} must don't contain @, ?, etc.`
+    );
+  } else {
+    showSuccessMessage(input);
+    return false;
+  }
+
+  return true;
 }
 
 function checkEmail(input) {
