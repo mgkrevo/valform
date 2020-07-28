@@ -50,7 +50,7 @@ body {
   color: #222831;
 }
 
-.form__control {
+.form__container {
   display: flex;
   flex-direction: column;
   margin-bottom: 4px;
@@ -97,28 +97,28 @@ body {
   background-color: #ffffff;
 }
 
-.form__input_error {
+.form__control_error .form__input {
   border-color: #ea728c !important;
   background-color: #f3d4d4 !important;
 }
 
-.form__input_error::placeholder,
-.form__message_error {
+.form__control_error .form__input::placeholder,
+.form__control_error .form__message {
   color: #ea728c !important;
 }
 
-.form__input_success {
+.form__control_success .form__input {
   border-color: #62d2a2 !important;
   background-color: #d7fbe8 !important;
 }
 
-.form__input_success::placeholder,
-.form__mesage_success {
+.form__control_success.form__input::placeholder,
+.form__control_success .form__message {
   color: #62d2a2 !important;
 }
 
-.form__message_error,
-.form__message_success {
+.form__control_error .form__message,
+.form__control_success .form__message {
   opacity: 1;
   visibility: visible;
 }
